@@ -5,14 +5,14 @@
 @homepageURL https://github.com/prettierlichess/prettierlichess
 @updateURL   https://github.com/TheTrio/stylishLichess/raw/main/styles.user.css
 @author      Noah Semus 
-@var color primaryColor "Primary color" #9fc0a2
+@var color primaryColor "Primary color" #9FC0A2
 @var color secondaryColor "Secondary color" #f5c276
 @var color tertiaryColor "Tertiary color" #d36d6d
-@var color backgroundColor "Background color" #2b343b
-@var color surfaceColor "Surface color" #3f474d
-@var color surfaceColorHover "Surface color hover" #4e565c
-@var color defaultWhite "Default white" #f2f5f3
-@var checkbox streamerMode "Streamer Mode" 1
+@var color backgroundColor "Background color" #272a2c
+@var color surfaceColor "Surface color" #333538
+@var color surfaceColorHover "Surface color hover" #404246
+@var color defaultWhite "Default white" #F2F5F3
+@var checkbox streamerMode "Streamer Mode" 0
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://lichess.org/")
