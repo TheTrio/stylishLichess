@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        PrettierLichess
 @namespace   github.com/openstyles/stylus
-@version     3.0.1
+@version     3.0.2
 @homepageURL https://github.com/prettierlichess/prettierlichess
 @updateURL   https://github.com/TheTrio/stylishLichess/raw/main/styles.user.css
 @author      Noah Semus 
@@ -12,6 +12,7 @@
 @var color surfaceColor "Surface color" #3f474d
 @var color surfaceColorHover "Surface color hover" #4e565c
 @var color defaultWhite "Default white" #f2f5f3
+@var checkbox streamerMode "Streamer Mode" 1
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://lichess.org/")
@@ -426,6 +427,22 @@
 
     .button.button-empty:hover {
         box-shadow: none !important;
+    }
+
+    .streamerButton {
+        background: none !important;
+        box-shadow: 0 0 0 1px var(--surfaceColorHover) inset !important;
+        color: var(--defaultWhite) !important;
+        font-weight: 400 !important;
+        max-height: 40px !important;
+        max-width: 200px !important;
+        align-self: end !important;
+        justify-self: end !important;
+        opacity: 0.3 !important;
+    }
+
+    .streamerButton:hover {
+        opacity: 1 !important;
     }
 
     .cmn-toggle + label {
@@ -3473,6 +3490,277 @@
         #nb_games_in_play strong,
         #nb_connected_players strong {
             font-size: 2.5rem !important;
+        }
+    }
+
+    /* Styling the API Documentation page */
+
+    /* main content */
+
+    .jveiGz,
+    .CvVzT {
+        color: #48cae4;
+    }
+
+    .epDZfL {
+        color: #bababa;
+    }
+
+    .hTmvgG {
+        border-color: var(--primaryColor);
+        color: var(--primaryColor);
+    }
+    .hTmvgG:hover {
+        color: var(--defaultWhite);
+    }
+
+    .cDQnzz a,
+    .dTfQqd a,
+    .kTjICZ a {
+        color: var(--primaryColor);
+    }
+
+    .cDQnzz a:visited,
+    .kTjICZ a:visited {
+        color: #659a69;
+    }
+
+    .dTfQqd a:visited {
+        color: var(--primaryColor);
+    }
+    .cDQnzz a:hover,
+    .dTfQqd a:hover,
+    .kTjICZ a:hover {
+        color: var(--defaultWhite);
+    }
+
+    .iieAzF {
+        color: var(--defaultWhite);
+    }
+
+    .cDQnzz code,
+    .iSaGJa,
+    .sc-qYSYK,
+    .hbCucb {
+        background-color: #222;
+        padding: 0.4em;
+        border-radius: 6px;
+        color: #a0fbaa;
+    }
+
+    .giGCsS,
+    .kTjICZ code {
+        background-color: #222;
+        padding: 0.2em 0.4em;
+        border-radius: 6px;
+        color: #c77dff;
+    }
+
+    .kTjICZ code {
+        padding: 0.4em;
+    }
+
+    .cDQnzz table tr {
+        background-color: var(--backgroundColor);
+    }
+
+    .cDQnzz table tr:nth-child(2n) {
+        background-color: var(--surfaceColor);
+    }
+
+    .gAECPP,
+    .iQtuBN,
+    .dONVW,
+    .kzCYbv {
+        border-bottom: 1px solid #dee2e6 !important;
+        color: #dee2e6;
+    }
+
+    .cgMNyW {
+        color: var(--defaultWhite);
+    }
+
+    .ihvgJG,
+    .ezqAQI,
+    .jhLjom.jhLjom .dropdown-selector-value {
+        color: #adb5bd;
+    }
+
+    .ciuLQT button {
+        color: #bababa;
+    }
+
+    .kUYIEQ .sc-dJjZJu,
+    .kUYIEQ .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu,
+    .kUYIEQ .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu {
+        background: var(--surfaceColor) none repeat scroll 0% 0%;
+    }
+
+    .kUYIEQ .sc-dJjZJu .sc-dJjZJu,
+    .kUYIEQ .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu,
+    .kUYIEQ .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu .sc-dJjZJu {
+        background: var(--backgroundColor) none repeat scroll 0% 0%;
+    }
+
+    .jAudhj,
+    .ehRoAS,
+    .dUEjwH {
+        color: #b3b3b3;
+    }
+
+    .jhLjom.jhLjom .dropdown-arrow {
+        border-color: var(--primaryColor) transparent transparent;
+    }
+
+    .jYvhHH.jYvhHH:hover .dropdown-selector-value,
+    .jYvhHH.jYvhHH:focus-within .dropdown-selector-value {
+        color: var(--primaryColor);
+        text-shadow: var(--primaryColor) 0px 0px 0px;
+    }
+
+    /*Left pane*/
+
+    .WRXpA {
+        background-color: var(--surfaceColor);
+    }
+
+    .gdtRWl:hover,
+    .eKKNtP,
+    .eKKNtP:hover,
+    .jTjaYG:hover {
+        background-color: var(--surfaceColorHover);
+        color: var(--defaultWhite);
+    }
+
+    .buCtgC:hover,
+    .iMTjtc:hover,
+    .eqSEf:hover,
+    .jPKYZB:hover {
+        background-color: #585b5f;
+    }
+
+    .gdtRWl,
+    .buCtgC,
+    .jTjaYG,
+    .iMTjtc,
+    .hBzgoJ,
+    .jPKYZB,
+    .eqSEf {
+        color: var(--defaultWhite);
+    }
+
+    .gdtRWl .sc-fznKkj polygon,
+    .eKKNtP .sc-egiSv polygon,
+    .EBHFd path,
+    .jTjaYG .sc-egiSv polygon,
+    .sc-egiSv .ekRynv polygon,
+    .sc-egiSv polygon {
+        fill: var(--primaryColor);
+    }
+
+    .search-input {
+        background-color: var(--surfaceColor) !important;
+    }
+
+    .hBzgoJ {
+        border: none !important;
+        border-bottom: 1px solid var(--primaryColor) !important;
+    }
+
+    img.sc-fzpdyU.lexfvL {
+        filter: invert(0.8);
+    }
+
+    if streamerMode {
+        @media (min-width: 800px), (orientation: landscape) {
+            div.round__app {
+                grid-template-columns:
+                    minmax(
+                        calc(70vmin * var(--board-scale)),
+                        calc(
+                            100vh * var(--board-scale) -
+                                calc(
+                                    var(--site-header-height) +
+                                        var(--site-header-margin)
+                                ) - 3rem
+                        )
+                    )
+                    minmax(240px, 400px);
+                grid-template-rows: 60px 1fr auto min-content 3fr auto min-content auto 1fr 60px !important;
+                grid-template-areas: 'user-top .' 'board .' 'board mat-top' 'board expi-top' 'board moves' 'board controls' 'board expi-bot' 'board mat-bot' 'board .' 'user-bot .' 'kb-move .';
+            }
+            rm6 {
+                background: var(--surfaceColor);
+                border-top: 2px solid var(--surfaceColorHover);
+                border-bottom: 2px solid var(--surfaceColorHover);
+                border-radius: var(--borderRadius);
+            }
+            .round__app .rclock-top {
+                padding-bottom: 20px;
+                padding-top: 10px;
+                grid-area: 1/ 2;
+            }
+            .round__app .rclock-bottom {
+                padding-top: 20px;
+                padding-bottom: 10px;
+                grid-area: 10 / 2;
+            }
+            .round__app .round__app__table {
+                grid-area: 4 / 2 / 6 / 3;
+            }
+            .rclock {
+                justify-self: flex-end;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                padding-right: calc(100% + 30px);
+            }
+            .rclock .tour-rank,
+            .rclock .moretime,
+            .rclock .berserked {
+                order: -1;
+            }
+            .rclock .bar {
+                display: none;
+            }
+            .rclock .time {
+                font-size: 1.5em;
+                line-height: 0px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .ruser {
+                font-size: 16px;
+                padding: 0em 0.5em !important;
+                line-height: 14px;
+                background: var(--surfaceColor);
+                border: 2px solid var(--surfaceColorHover);
+                border-radius: var(--borderRadius);
+                align-items: center;
+            }
+            .ruser-bottom {
+                margin-top: 10px;
+            }
+            .ruser-top {
+                margin-bottom: 10px;
+            }
+            .ruser a {
+                overflow: visible;
+                flex: none;
+            }
+            .rcontrols {
+                margin-top: 10px;
+                background: var(--surfaceColor);
+                border: 2px solid var(--surfaceColorHover);
+                border-radius: var(--borderRadius);
+            }
+            .ricons {
+                margin-top: 0;
+            }
+            #top .site-buttons a[title='Moderation'] {
+                display: none;
+            }
         }
     }
 }
